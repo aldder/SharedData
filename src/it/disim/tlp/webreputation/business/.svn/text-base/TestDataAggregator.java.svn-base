@@ -1,0 +1,83 @@
+package it.disim.tlp.webreputation.business;
+
+import it.disim.tlp.webreputation.business.model.Post;
+import it.disim.tlp.webreputation.business.model.Sorgente;
+import it.disim.tlp.webreputation.business.model.Topic;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.sql.Date;
+
+
+
+public class TestDataAggregator {
+	
+	
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		AbstractDataAggregatorFactory factory = FactoryBuilder.getInstance();
+		
+		
+//		//Esempio: prendiamo tutti i post
+//		PostService postService = factory.getPostService();				
+//		List<Post> posts = postService.getAllPosts();	
+//		
+//		System.out.println("Nel DB sono presenti " + posts.size() + " posts : ");
+//		
+//		for(Post tmpPost : posts){
+//			
+//			 System.out.println("Id = " + tmpPost.getId() +
+//		        		" ###### Link = " + tmpPost.getLink() +
+//		        		" ###### Data = " + tmpPost.getData() +
+//		        		" ###### Polarity = " + tmpPost.getPolarity() +
+//		        		" ###### Id_Fonte = " + tmpPost.getSorgente().getId() +
+//		        		" ###### Text = " + tmpPost.getText() );
+//			
+//		}			
+//		
+//		
+//		
+//		//Esempio: prendiamo tutti i Connectors
+//		ConnectorService connectionService = factory.getConnectorService();
+//		
+//		Collection<Connector> conns = connectionService.getAllConnectors();
+//		
+//		for(Connector con : conns){
+//			
+//			 System.out.println("Id = " + con.getId() +
+//		        		" ###### Name = " + con.getName() +
+//		        		" ###### upInterval = " + con.getUpdateInterval()
+//		        		
+//					 );
+//			
+//		}	
+//			
+	
+		PostService post = factory.getPostService();
+		Sorgente sorgente = new Sorgente();
+		sorgente.setId(22);
+		
+		Date data = new Date(1000);
+		
+		Collection<Topic> topics = new ArrayList<Topic>();
+		Topic t1 = new Topic();
+		t1.setTopic("Basciani7");
+		topics.add(t1);
+		
+		Topic t2 = new Topic();
+		t2.setTopic("Basciani8");
+		topics.add(t2);
+		
+		Topic t3 = new Topic();
+		t3.setTopic("Basciani69");
+		topics.add(t3);
+		
+		Post p = new Post("Test dopo data", data, "+1", "Questo post e dopo data", sorgente, topics, 1);
+		
+		System.out.println(post.savePost(p));
+	}
+
+}

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/dashboard/!svn/ver/442/dataAggregator/src/it/disim/tlp/webreputation/business
+END
+TopicService.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/dashboard/!svn/ver/271/dataAggregator/src/it/disim/tlp/webreputation/business/TopicService.java
+END
+UtenteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/dashboard/!svn/ver/167/dataAggregator/src/it/disim/tlp/webreputation/business/UtenteService.java
+END
+PostService.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/dashboard/!svn/ver/167/dataAggregator/src/it/disim/tlp/webreputation/business/PostService.java
+END
+SorgenteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/dashboard/!svn/ver/167/dataAggregator/src/it/disim/tlp/webreputation/business/SorgenteService.java
+END
+AbstractDataAggregatorFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/dashboard/!svn/ver/167/dataAggregator/src/it/disim/tlp/webreputation/business/AbstractDataAggregatorFactory.java
+END
+ConnectorService.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/dashboard/!svn/ver/412/dataAggregator/src/it/disim/tlp/webreputation/business/ConnectorService.java
+END
+TestDataAggregator.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/dashboard/!svn/ver/413/dataAggregator/src/it/disim/tlp/webreputation/business/TestDataAggregator.java
+END
+FactoryBuilder.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/dashboard/!svn/ver/167/dataAggregator/src/it/disim/tlp/webreputation/business/FactoryBuilder.java
+END

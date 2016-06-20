@@ -1,0 +1,14 @@
+package it.disim.tlp.webreputation.business;
+
+import java.sql.SQLException;
+
+import it.disim.tlp.webreputation.business.model.Topic;
+
+public interface TopicService {
+	
+	public int saveTopic(Topic topic) throws SQLException;
+	public void updateTopic(Topic topic) throws SQLException;
+	
+	public boolean checkIfExist(Topic topic);
+
+}

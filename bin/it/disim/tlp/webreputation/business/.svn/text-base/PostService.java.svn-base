@@ -1,0 +1,14 @@
+package it.disim.tlp.webreputation.business;
+
+import java.util.List;
+
+import it.disim.tlp.webreputation.business.model.Post;
+
+
+public interface PostService {	
+	
+	public List<Post> getAllPosts();
+	
+	public int savePost(Post post);
+
+}

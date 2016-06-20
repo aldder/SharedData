@@ -1,0 +1,15 @@
+package it.disim.tlp.webreputation.business;
+
+import it.disim.tlp.webreputation.business.model.Connector;
+
+import java.util.Collection;
+
+public interface ConnectorService {
+	
+	public Collection<Connector> getAllConnectors();
+	
+	public Connector getConnector(Connector connector);
+	
+	public void updateActivityDate(Connector connector, String activityDate);
+
+}

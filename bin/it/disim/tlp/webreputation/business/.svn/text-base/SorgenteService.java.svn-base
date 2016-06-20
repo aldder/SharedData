@@ -1,0 +1,17 @@
+package it.disim.tlp.webreputation.business;
+
+import it.disim.tlp.webreputation.business.model.Connector;
+import it.disim.tlp.webreputation.business.model.Sorgente;
+
+
+import java.util.Collection;
+import java.util.List;
+
+public interface SorgenteService {
+	
+	public Collection<Sorgente> getSorgentiFromConnector(Connector connector);
+	
+	public void updateSorgente(Sorgente sorgente);
+	
+	public List<Sorgente> getSorgenti();
+}

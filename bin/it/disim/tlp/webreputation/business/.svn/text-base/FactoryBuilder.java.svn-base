@@ -1,0 +1,20 @@
+package it.disim.tlp.webreputation.business;
+
+import it.disim.tlp.webreputation.business.impl.JDBCAbstractDataAggregatorFactory;
+
+public final class FactoryBuilder {
+	
+	private static AbstractDataAggregatorFactory instance;
+	
+	private FactoryBuilder(){
+		/*constructor hiding*/
+	}
+	
+	public static final synchronized AbstractDataAggregatorFactory getInstance(){
+		if(instance == null){
+			instance = new JDBCAbstractDataAggregatorFactory();
+		}
+		return instance;
+	}
+
+}

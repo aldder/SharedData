@@ -1,0 +1,9 @@
+package it.disim.tlp.webreputation.business;
+
+import it.disim.tlp.webreputation.business.model.Utente;
+
+public interface UtenteService {
+	
+	public Utente getUser(Utente user);
+
+}

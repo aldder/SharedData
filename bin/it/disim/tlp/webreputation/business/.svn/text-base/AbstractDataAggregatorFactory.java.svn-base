@@ -1,0 +1,11 @@
+package it.disim.tlp.webreputation.business;
+
+public interface AbstractDataAggregatorFactory {
+	
+	public SorgenteService getSorgenteService();
+	public PostService getPostService();
+	public TopicService getTopicService();
+	public UtenteService getUtenteService();
+	public ConnectorService getConnectorService();
+
+}

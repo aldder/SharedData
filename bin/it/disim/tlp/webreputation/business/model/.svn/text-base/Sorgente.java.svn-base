@@ -1,0 +1,86 @@
+package it.disim.tlp.webreputation.business.model;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class Sorgente {
+	private int id;
+	private String name;
+	private String description;
+	private String link;
+	private String tipo;
+	private String icona;
+	private Utente autore;
+	private long last_timestamp;
+	private Connector connector;
+	private Collection<Utente> utenti = new ArrayList<Utente>();	
+	private Collection<Post> posts = new ArrayList<Post>();
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	public String getLink() {
+		return link;
+	}
+	public void setLink(String link) {
+		this.link = link;
+	}
+	public String getTipo() {
+		return tipo;
+	}
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	public String getIcona() {
+		return icona;
+	}
+	public void setIcona(String icona) {
+		this.icona = icona;
+	}
+	public Utente getAutore() {
+		return autore;
+	}
+	public void setAutore(Utente autore) {
+		this.autore = autore;
+	}
+	public long getLast_timestamp() {
+		return last_timestamp;
+	}
+	public void setLast_timestamp(long last_timestamp) {
+		this.last_timestamp = last_timestamp;
+	}
+	public Connector getConnector() {
+		return connector;
+	}
+	public void setConnector(Connector connector) {
+		this.connector = connector;
+	}
+	public Collection<Utente> getUtenti() {
+		return utenti;
+	}
+	public void setUtenti(Collection<Utente> utenti) {
+		this.utenti = utenti;
+	}
+	public Collection<Post> getPosts() {
+		return posts;
+	}
+	public void setPosts(Collection<Post> posts) {
+		this.posts = posts;
+	}
+}

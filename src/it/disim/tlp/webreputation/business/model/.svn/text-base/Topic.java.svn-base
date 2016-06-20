@@ -1,0 +1,42 @@
+package it.disim.tlp.webreputation.business.model;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class Topic {
+	private int id;
+	private String topic;
+	private Float weight;
+	private Collection<Post> posts = new ArrayList<Post>();
+	
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getTopic() {
+		return topic;
+	}
+	public Float getWeight() {
+		return weight;
+	}
+	public void setTopic(String topic) {
+		this.topic = topic;
+	}
+	public void setWeight(Float weight) {
+		this.weight = weight;
+	}
+	public Collection<Post> getPosts() {
+		return posts;
+	}
+	public void setPosts(Collection<Post> posts) {
+		this.posts = posts;
+	}
+	
+	
+	
+	
+	
+}
